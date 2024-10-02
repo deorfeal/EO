@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list menu-list">
+                            <li class="menu-list__item">
+                                <a class="menu-list__link menu-list__link--active" href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu-list__item menu-list__item--sublist">
+                                <div class="menu-list__point">
+                                    <span>
+                                        Услуги
+                                    </span>
+                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2426_5670)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.36126 11.6842C9.54625 11.8586 9.54625 12.1414 9.36126 12.3158L4.53192 16.8692C4.34693 17.0436 4.04705 17.0436 3.86207 16.8692L3.63874 16.6586C3.45375 16.4842 3.45375 16.2015 3.63874 16.027L7.90983 12L3.63874 7.97295C3.45375 7.79854 3.45375 7.5158 3.63874 7.34138L3.86207 7.13081C4.04705 6.9564 4.34693 6.9564 4.53192 7.13081L9.36126 11.6842Z"
+                                                fill="#1E1E1E" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2426_5670">
+                                                <rect width="24" height="12" fill="white"
+                                                    transform="translate(0.5 24) rotate(-90)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <ul class="menu-list__sublist menu-sublist">
+                                    <li class="menu-sublist__item">
+                                        <a class="menu-sublist__link" href="#">
+                                            Услуга 1
+                                        </a>
+                                    </li>
+                                    <li class="menu-sublist__item">
+                                        <a class="menu-sublist__link" href="#">
+                                            Услуга 2
+                                        </a>
+                                    </li>
+                                    <li class="menu-sublist__item">
+                                        <a class="menu-sublist__link" href="#">
+                                            Услуга 3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Карьера
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a class="menu-list__link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang lang">
+                        <div class="lang__inner">
+                            <div class="lang__text">
+                                Выбрать язык
+                                <span>
+                                    / Изменить
+                                </span>
+                            </div>
+                            <div class="lang__current">
+                                <span>
+                                    Рус
+                                </span>
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.5 8.25L11 13.75L5.5 8.25" stroke="#1E1E1E" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="lang__list lang-list">
+                            <li class="lang-list__item">
+                                <a class="lang-list__link" href="#">
+                                    Рус
+                                </a>
+                            </li>
+                            <li class="lang-list__item">
+                                <a class="lang-list__link" href="#">
+                                    Кз
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__cnt cnt">
+                        <h2 class="cnt__title">
+                            Контакты
+                        </h2>
+                        <div class="cnt__inner">
+                            <div class="cnt__item cnt-item cnt-item--active">
+                                <div class="cnt-item__point cnt-point">
+                                    <span>
+                                        Атырау
+                                    </span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.8613 11.6842C15.0462 11.8586 15.0462 12.1414 14.8613 12.3158L10.0319 16.8692C9.84693 17.0436 9.54705 17.0436 9.36207 16.8692L9.13874 16.6586C8.95375 16.4842 8.95375 16.2015 9.13874 16.027L13.4098 12L9.13874 7.97295C8.95375 7.79854 8.95375 7.5158 9.13874 7.34138L9.36207 7.13081C9.54705 6.9564 9.84693 6.9564 10.0319 7.13081L14.8613 11.6842Z"
+                                            fill="#1E1E1E" />
+                                    </svg>
+
+                                </div>
+                                <div class="cnt-item__inner">
+                                    <a class="cnt-item__tel" href="tel:+77122763243">
+                                        +7 (7122) 76 32 43
+                                    </a>
+                                    <div class="cnt-item__wrapper">
+                                        <div class="cnt-item__box cnt-box">
+                                            <div class="cnt-box__text">
+                                                По вопросам сервисного центра
+                                            </div>
+                                            <a class="cnt-box__link" href="mailto:workshop@ediloral.kz">
+                                                workshop@ediloral.kz
+                                            </a>
+                                        </div>
+                                        <div class="cnt-item__box cnt-box">
+                                            <div class="cnt-box__text">
+                                                По вопросам обучения
+                                            </div>
+                                            <a class="cnt-box__link" href="mailto:training@ediloral.kz">
+                                                training@ediloral.kz
+                                            </a>
+                                        </div>
+                                        <div class="cnt-item__box cnt-box">
+                                            <div class="cnt-box__text">
+                                                По общим вопросам
+                                            </div>
+                                            <a class="cnt-box__link" href="mailto:office_admin@ediloral.kz">
+                                                office_admin@ediloral.kz
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cnt-item__address cnt-address">
+                                        <div class="cnt-address__text">
+                                            Адресс:
+                                        </div>
+                                        <p class="cnt-address__subtext">
+                                            Атырауская область, г. Атырау, с.о. Кайыршакты, с. Томарлы, ж.м. Жұлдыз,
+                                            трасса Атырау Доссор, строение 139
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cnt__item cnt-item">
+                                <div class="cnt-item__point cnt-point">
+                                    <span>
+                                        Уральск
+                                    </span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.8613 11.6842C15.0462 11.8586 15.0462 12.1414 14.8613 12.3158L10.0319 16.8692C9.84693 17.0436 9.54705 17.0436 9.36207 16.8692L9.13874 16.6586C8.95375 16.4842 8.95375 16.2015 9.13874 16.027L13.4098 12L9.13874 7.97295C8.95375 7.79854 8.95375 7.5158 9.13874 7.34138L9.36207 7.13081C9.54705 6.9564 9.84693 6.9564 10.0319 7.13081L14.8613 11.6842Z"
+                                            fill="#1E1E1E" />
+                                    </svg>
+                                </div>
+                                <div class="cnt-item__inner">
+                                    <a class="cnt-item__tel" href="tel:+77112527500">
+                                        +7 (7112) 52 75 00
+                                    </a>
+                                    <div class="cnt-item__address cnt-address">
+                                        <div class="cnt-address__text">
+                                            Адресс:
+                                        </div>
+                                        <p class="cnt-address__subtext">
+                                            ул. Гагарина 2/4
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cnt__item cnt-item">
+                                <div class="cnt-item__point cnt-point">
+                                    <span>
+                                        Баку, Азербайджан
+                                    </span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.8613 11.6842C15.0462 11.8586 15.0462 12.1414 14.8613 12.3158L10.0319 16.8692C9.84693 17.0436 9.54705 17.0436 9.36207 16.8692L9.13874 16.6586C8.95375 16.4842 8.95375 16.2015 9.13874 16.027L13.4098 12L9.13874 7.97295C8.95375 7.79854 8.95375 7.5158 9.13874 7.34138L9.36207 7.13081C9.54705 6.9564 9.84693 6.9564 10.0319 7.13081L14.8613 11.6842Z"
+                                            fill="#1E1E1E" />
+                                    </svg>
+                                </div>
+                                <div class="cnt-item__inner">
+                                    <a class="cnt-item__tel" href="tel:+994123103415">
+                                        +994 123103415
+                                    </a>
+                                    <div class="cnt-item__wrapper">
+                                        <div class="cnt-item__box cnt-box">
+                                            <div class="cnt-box__text">
+                                                Email
+                                            </div>
+                                            <a class="cnt-box__link" href="mailto:azhdar.hajiyev@ediloral.az">
+                                                azhdar.hajiyev@ediloral.az
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cnt-item__address cnt-address">
+                                        <div class="cnt-address__text">
+                                            Адресс:
+                                        </div>
+                                        <p class="cnt-address__subtext">
+                                            ул.Джаббара Джаббарлы, 44. Caspian Plaza, 3 корпус, 4 этаж
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__burger burger">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5984 19.2H2.39844M21.5984 12H2.39844M21.5984 4.80005H2.39844" stroke="black"
+                            stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__breadcrumbs breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list breadcrumbs-list">
+                        <li class="breadcrumbs-list__item">
+                            <a class="breadcrumbs-list__link" href="#">
+                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2426_7853)">
+                                        <path
+                                            d="M12.7817 6.31146L6.949 0.996757C6.69298 0.763442 6.30692 0.763468 6.05101 0.996731L0.218309 6.31149C0.0132296 6.49836 -0.0545125 6.78629 0.0456788 7.04499C0.145895 7.3037 0.389899 7.47085 0.667342 7.47085H1.59892V12.7958C1.59892 13.0069 1.77011 13.1781 1.98123 13.1781H5.17826C5.38938 13.1781 5.56056 13.0069 5.56056 12.7958V9.56265H7.43952V12.7958C7.43952 13.0069 7.6107 13.1781 7.82182 13.1781H11.0187C11.2298 13.1781 11.401 13.007 11.401 12.7958V7.47085H12.3328C12.6102 7.47085 12.8542 7.30367 12.9544 7.04499C13.0545 6.78626 12.9867 6.49836 12.7817 6.31146Z"
+                                            fill="#2987C6" />
+                                        <path
+                                            d="M11.3018 1.58496H8.73438L11.6841 4.26712V1.96724C11.6841 1.75612 11.513 1.58496 11.3018 1.58496Z"
+                                            fill="#2987C6" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2426_7853">
+                                            <rect width="13" height="13" fill="white" transform="translate(0 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>
+                                    Главная
+                                </span>
+                            </a>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.5">
+                                    <path
+                                        d="M11.8082 6.46613L7.47455 10.7998C7.35085 10.9236 7.18597 10.9915 7.01017 10.9915C6.83417 10.9915 6.66939 10.9235 6.54569 10.7998L6.15223 10.4063C6.02862 10.2828 5.96052 10.1178 5.96052 9.9419C5.96052 9.7661 6.02862 9.59557 6.15223 9.47205L8.6804 6.93832H0.648286C0.286143 6.93832 0 6.65481 0 6.29257V5.73619C0 5.37394 0.286143 5.06185 0.648286 5.06185H8.70908L6.15232 2.51397C6.02872 2.39026 5.96062 2.22978 5.96062 2.05388C5.96062 1.87817 6.02872 1.71534 6.15232 1.59173L6.54578 1.19944C6.66949 1.07574 6.83427 1.00832 7.01027 1.00832C7.18607 1.00832 7.35095 1.07662 7.47465 1.20032L11.8083 5.53394C11.9323 5.65804 12.0005 5.8237 12 5.99979C12.0004 6.17647 11.9323 6.34223 11.8082 6.46613Z"
+                                        fill="black" />
+                                </g>
+                            </svg>
+                        </li>
+                        <li class="breadcrumbs-list__item">
+                            Новости
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="main__updates updates">
+                <div class="container">
+                    <h1 class="updates__title title">
+                        Список новостей
+                    </h1>
+                    <div class="updates__inner">
+                        <div class="updates__item news-item">
+                            <picture class="news-item__img">
+                                <img src="images/news-item-img-1.jpg" alt="img">
+                            </picture>
+                            <div class="news-item__inner">
+                                <p class="news-item__date">
+                                    25.09.2022
+                                </p>
+                                <h6 class="news-item__title">
+                                    Семинар «Проект индустриального парка Атырауской области».
+                                </h6>
+                                <a href="#" class="news-item__link">
+                                    Читать полностью
+                                </a>
+                            </div>
+                        </div>
+                        <div class="updates__item news-item">
+                            <picture class="news-item__img">
+                                <img src="images/news-item-img-2.jpg" alt="img">
+                            </picture>
+                            <div class="news-item__inner">
+                                <p class="news-item__date">
+                                    22.10.2022
+                                </p>
+                                <h6 class="news-item__title">
+                                    Тимбилдинг outdoor
+                                </h6>
+                                <a href="#" class="news-item__link">
+                                    Читать полностью
+                                </a>
+                            </div>
+                        </div>
+                        <div class="updates__item news-item">
+                            <picture class="news-item__img">
+                                <img src="images/news-item-img-3.jpg" alt="img">
+                            </picture>
+                            <div class="news-item__inner">
+                                <p class="news-item__date">
+                                    23.09.2022
+                                </p>
+                                <h6 class="news-item__title">
+                                    Семинар на выставке КИОГЕ 2022
+                                </h6>
+                                <a href="#" class="news-item__link">
+                                    Читать полностью
+                                </a>
+                            </div>
+                        </div>
+                        <div class="updates__item news-item">
+                            <picture class="news-item__img">
+                                <img src="images/news-item-img-1.jpg" alt="img">
+                            </picture>
+                            <div class="news-item__inner">
+                                <p class="news-item__date">
+                                    25.09.2022
+                                </p>
+                                <h6 class="news-item__title">
+                                    Семинар «Проект индустриального парка Атырауской области».
+                                </h6>
+                                <a href="#" class="news-item__link">
+                                    Читать полностью
+                                </a>
+                            </div>
+                        </div>
+                        <div class="updates__item news-item">
+                            <picture class="news-item__img">
+                                <img src="images/news-item-img-2.jpg" alt="img">
+                            </picture>
+                            <div class="news-item__inner">
+                                <p class="news-item__date">
+                                    22.10.2022
+                                </p>
+                                <h6 class="news-item__title">
+                                    Тимбилдинг outdoor
+                                </h6>
+                                <a href="#" class="news-item__link">
+                                    Читать полностью
+                                </a>
+                            </div>
+                        </div>
+                        <div class="updates__item news-item">
+                            <picture class="news-item__img">
+                                <img src="images/news-item-img-3.jpg" alt="img">
+                            </picture>
+                            <div class="news-item__inner">
+                                <p class="news-item__date">
+                                    23.09.2022
+                                </p>
+                                <h6 class="news-item__title">
+                                    Семинар на выставке КИОГЕ 2022
+                                </h6>
+                                <a href="#" class="news-item__link">
+                                    Читать полностью
+                                </a>
+                            </div>
+                        </div>
+                        <div class="updates__item news-item">
+                            <picture class="news-item__img">
+                                <img src="images/news-item-img-1.jpg" alt="img">
+                            </picture>
+                            <div class="news-item__inner">
+                                <p class="news-item__date">
+                                    25.09.2022
+                                </p>
+                                <h6 class="news-item__title">
+                                    Семинар «Проект индустриального парка Атырауской области».
+                                </h6>
+                                <a href="#" class="news-item__link">
+                                    Читать полностью
+                                </a>
+                            </div>
+                        </div>
+                        <div class="updates__item news-item">
+                            <picture class="news-item__img">
+                                <img src="images/news-item-img-2.jpg" alt="img">
+                            </picture>
+                            <div class="news-item__inner">
+                                <p class="news-item__date">
+                                    22.10.2022
+                                </p>
+                                <h6 class="news-item__title">
+                                    Тимбилдинг outdoor
+                                </h6>
+                                <a href="#" class="news-item__link">
+                                    Читать полностью
+                                </a>
+                            </div>
+                        </div>
+                        <div class="updates__item news-item">
+                            <picture class="news-item__img">
+                                <img src="images/news-item-img-3.jpg" alt="img">
+                            </picture>
+                            <div class="news-item__inner">
+                                <p class="news-item__date">
+                                    23.09.2022
+                                </p>
+                                <h6 class="news-item__title">
+                                    Семинар на выставке КИОГЕ 2022
+                                </h6>
+                                <a href="#" class="news-item__link">
+                                    Читать полностью
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="updates__paging paging">
+                        <div class="paging__inner">
+                            <a class="paging__btn paging-btn paging-btn--prev" href="#">
+                                <span>
+                                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.03972 6.93774C0.820044 6.71806 0.820044 6.36196 1.03972 6.14229L6.77459 0.407426C6.99427 0.187759 7.35037 0.187759 7.57004 0.407426L7.83524 0.672596C8.05492 0.892264 8.05492 1.24842 7.83524 1.46809L2.76329 6.54001L7.83524 11.612C8.05492 11.8316 8.05492 12.1877 7.83524 12.4074L7.57004 12.6726C7.35037 12.8923 6.99427 12.8923 6.77459 12.6726L1.03972 6.93774Z"
+                                            fill="#1E1E1E" />
+                                    </svg>
+                                </span>
+                                Назад
+                            </a>
+                            <ul class="paging__list paging-list">
+                                <li class="paging-list__item">
+                                    <a class="paging-list__link paging-list__link--active" href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="paging-list__item">
+                                    <a class="paging-list__link" href="#">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="paging-list__item">
+                                    <a class="paging-list__link" href="#">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="paging-list__item">
+                                    <a class="paging-list__link" href="#">
+                                        4
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="paging__btn paging-btn paging-btn--prev" href="#">
+                                Вперёд
+                                <span>
+                                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.96028 6.14234C7.17996 6.36202 7.17996 6.71812 6.96028 6.93779L1.22541 12.6727C1.00573 12.8923 0.649631 12.8923 0.429956 12.6727L0.164756 12.4075C-0.0549187 12.1878 -0.0549187 11.8317 0.164756 11.612L5.23671 6.54007L0.164756 1.46812C-0.0549186 1.24844 -0.0549186 0.892341 0.164756 0.672667L0.429956 0.407467C0.649631 0.187792 1.00573 0.187792 1.22541 0.407467L6.96028 6.14234Z"
+                                            fill="#1E1E1E" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__inner">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo__img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <div class="footer__nav nav">
+                            <h5 class="nav__title">
+                                Услуги
+                            </h5>
+                            <ul class="nav__list nav-list">
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link" href="#">
+                                        Обучение
+                                    </a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link" href="#">
+                                        Обслуживание
+                                    </a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link" href="#">
+                                        Инспекции
+                                    </a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link" href="#">
+                                        Консалтинг
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav nav">
+                            <h5 class="nav__title">
+                                О компании
+                            </h5>
+                            <ul class="nav__list nav-list">
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link" href="#">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link" href="#">
+                                        История
+                                    </a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link" href="#">
+                                        Галерея
+                                    </a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link" href="#">
+                                        Партнёры
+                                    </a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link" href="#">
+                                        Карьера
+                                    </a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link nav-list__link--file" href="#">
+                                        <span>
+                                            Презентация компании
+                                        </span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.8346 18.3332H4.16797V16.6665H15.8346V18.3332ZM10.0013 14.9998L5.0013 9.99984L6.1763 8.82484L9.16797 11.8082V1.6665H10.8346V11.8082L13.8263 8.82484L15.0013 9.99984L10.0013 14.9998Z"
+                                                fill="#C4C4C4" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__link nav-list__link--file" href="#">
+                                        <span>
+                                            Политика в области качества
+                                        </span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.8346 18.3332H4.16797V16.6665H15.8346V18.3332ZM10.0013 14.9998L5.0013 9.99984L6.1763 8.82484L9.16797 11.8082V1.6665H10.8346V11.8082L13.8263 8.82484L15.0013 9.99984L10.0013 14.9998Z"
+                                                fill="#C4C4C4" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav nav">
+                            <h5 class="nav__title">
+                                Контакты
+                            </h5>
+                            <a class="nav__link" href="tel:+77122763243">
+                                +7 (7122) 76 32 43
+                            </a>
+                            <div class="nav__box nav-box">
+                                <div class="nav-box__text">
+                                    Горячая линия
+                                </div>
+                                <a class="nav-box__link" href="mailto:hotline@ediloral.kz">
+                                    hotline@ediloral.kz
+                                </a>
+                            </div>
+                            <div class="nav__box nav-box">
+                                <div class="nav-box__text">
+                                    По вопросам
+                                </div>
+                                <a class="nav-box__link" href="#">
+                                    office_admin@ediloral.kz
+                                </a>
+                            </div>
+                            <div class="nav__address nav-address">
+                                <div class="nav-address__title">
+                                    Адресс:
+                                </div>
+                                <address class="nav-address__text">
+                                    Атырауская область, г. Атырау, с.о. Кайыршакты, с. Томарлы, ж.м. Жұлдыз, трасса
+                                    Атырау Доссор, строение 139
+                                </address>
+                            </div>
+                        </div>
+                        <div class="footer__socials socials">
+                            <h5 class="socials__title">
+                                Наши социальные <br>
+                                сети
+                            </h5>
+                            <ul class="socials__list socials-list">
+                                <li class="socials-list__item">
+                                    <a class="socials-list__link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20.1874 20.4496H16.6768V14.8805C16.6768 13.5525 16.6535 11.8429 14.851 11.8429C13.0226 11.8429 12.7429 13.2899 12.7429 14.7838V20.4492H9.23231V8.99689H12.6024V10.562H12.6496C12.9869 9.97782 13.4742 9.49726 14.0598 9.17149C14.6453 8.84572 15.3072 8.68693 15.9747 8.71203C19.5328 8.71203 20.1888 11.0828 20.1888 14.167L20.1874 20.4496ZM5.27128 7.43144C4.86835 7.43151 4.47445 7.31055 4.13939 7.08385C3.80434 6.85715 3.54318 6.53489 3.38893 6.15783C3.23467 5.78077 3.19424 5.36584 3.27278 4.96551C3.35131 4.56517 3.54528 4.19743 3.83014 3.90876C4.11499 3.6201 4.47795 3.42348 4.87312 3.34378C5.26828 3.26408 5.6779 3.30488 6.05018 3.46101C6.42245 3.61713 6.74067 3.88158 6.96458 4.22091C7.18849 4.56025 7.30804 4.95922 7.30812 5.36738C7.30817 5.63839 7.25551 5.90675 7.15318 6.15715C7.05084 6.40754 6.90084 6.63507 6.7117 6.82674C6.52256 7.0184 6.29799 7.17045 6.05085 7.27421C5.8037 7.37796 5.5388 7.43139 5.27128 7.43144ZM7.02654 20.4496H3.51235V8.99689H7.02654V20.4496ZM21.9375 0.00163516H1.74832C1.29008 -0.00360329 0.848515 0.175663 0.520688 0.500042C0.192861 0.824421 0.00559254 1.26737 0 1.73156V22.2681C0.00540113 22.7325 0.19256 23.1758 0.520376 23.5005C0.848192 23.8252 1.28985 24.0048 1.74832 23.9999H21.9375C22.3969 24.0057 22.8398 23.8266 23.1689 23.5019C23.498 23.1772 23.6864 22.7334 23.6928 22.2681V1.73008C23.6862 1.26497 23.4977 0.821515 23.1686 0.497144C22.8394 0.172773 22.3967 -0.00598143 21.9375 0.000152822"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__link" href="#">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2458_2712)">
+                                                <path
+                                                    d="M7.72151 0.0839251C6.44471 0.144165 5.57279 0.347925 4.81055 0.647445C4.02167 0.954885 3.35303 1.36745 2.68775 2.03513C2.02247 2.70281 1.61279 3.37193 1.30751 4.16201C1.01207 4.92593 0.811906 5.79857 0.755506 7.07609C0.699106 8.35361 0.686626 8.76425 0.692866 12.023C0.699106 15.2817 0.713506 15.6902 0.775426 16.9703C0.836386 18.2469 1.03943 19.1186 1.33895 19.881C1.64687 20.6699 2.05895 21.3383 2.72687 22.0038C3.39479 22.6694 4.06343 23.0781 4.85543 23.3838C5.61863 23.6788 6.49151 23.8799 7.76879 23.9358C9.04607 23.9918 9.45719 24.0047 12.7149 23.9985C15.9727 23.9922 16.3829 23.9778 17.6628 23.9171C18.9427 23.8564 19.8098 23.6519 20.5725 23.3538C21.3614 23.0452 22.0303 22.6338 22.6953 21.9657C23.3604 21.2975 23.7698 20.6279 24.0749 19.8374C24.3705 19.0742 24.5714 18.2013 24.6269 16.925C24.6828 15.6441 24.696 15.2351 24.6897 11.9769C24.6835 8.71865 24.6689 8.31017 24.6081 7.03049C24.5474 5.75081 24.3441 4.88177 24.0449 4.11881C23.7365 3.32993 23.3249 2.66201 22.6572 1.99601C21.9895 1.33001 21.3194 0.920805 20.5291 0.616485C19.7654 0.321045 18.893 0.119685 17.6157 0.0644851C16.3385 0.00928514 15.9273 -0.00487487 12.6684 0.00136513C9.40943 0.00760513 9.00143 0.0215251 7.72151 0.0839251ZM7.86167 21.777C6.69167 21.7262 6.05639 21.5318 5.63303 21.369C5.07239 21.153 4.67303 20.8919 4.25111 20.4741C3.82919 20.0562 3.56999 19.6554 3.35111 19.096C3.18671 18.6726 2.98871 18.0381 2.93399 16.8681C2.87447 15.6035 2.86199 15.2238 2.85503 12.0201C2.84807 8.81633 2.86031 8.43713 2.91575 7.17209C2.96567 6.00305 3.16127 5.36705 3.32375 4.94393C3.53975 4.38257 3.79991 3.98393 4.21871 3.56225C4.63751 3.14057 5.03711 2.88089 5.59703 2.66201C6.01991 2.49689 6.65447 2.30057 7.82399 2.24489C9.08951 2.18489 9.46871 2.17289 12.672 2.16593C15.8753 2.15897 16.2554 2.17097 17.5214 2.22664C18.6905 2.27753 19.3267 2.4712 19.7493 2.63464C20.3102 2.85065 20.7093 3.11009 21.131 3.52961C21.5527 3.94913 21.8126 4.34729 22.0315 4.90841C22.1969 5.33009 22.3932 5.96441 22.4484 7.13465C22.5086 8.40017 22.5223 8.7796 22.5281 11.9826C22.5338 15.1857 22.5225 15.5661 22.4671 16.8306C22.416 18.0006 22.2221 18.6362 22.0591 19.06C21.8431 19.6204 21.5827 20.02 21.1637 20.4414C20.7446 20.8629 20.3455 21.1226 19.7853 21.3414C19.3629 21.5063 18.7277 21.7031 17.5591 21.7588C16.2936 21.8183 15.9144 21.8308 12.7099 21.8378C9.50543 21.8447 9.12743 21.8318 7.86191 21.777M17.6443 5.58641C17.6448 5.87123 17.7297 6.14952 17.8884 6.38607C18.047 6.62262 18.2722 6.80681 18.5356 6.91535C18.7989 7.02389 19.0885 7.05189 19.3678 6.99583C19.647 6.93976 19.9034 6.80214 20.1044 6.60037C20.3054 6.3986 20.4421 6.14174 20.4972 5.86228C20.5522 5.58283 20.5231 5.29333 20.4136 5.03039C20.3041 4.76746 20.1191 4.5429 19.882 4.38512C19.6448 4.22735 19.3662 4.14344 19.0814 4.14401C18.6996 4.14477 18.3337 4.29715 18.0642 4.56764C17.7947 4.83813 17.6437 5.20458 17.6443 5.58641ZM6.52991 12.0119C6.53663 15.4151 9.30047 18.1677 12.7029 18.1612C16.1054 18.1547 18.8599 15.3911 18.8534 11.9879C18.8469 8.58473 16.0824 5.83145 12.6794 5.83817C9.27647 5.84489 6.52343 8.60921 6.52991 12.0119ZM8.69135 12.0076C8.68978 11.2165 8.92285 10.4426 9.36108 9.78395C9.79931 9.12527 10.423 8.61134 11.1533 8.30714C11.8837 8.00294 12.6878 7.92213 13.464 8.07494C14.2403 8.22774 14.9538 8.6073 15.5143 9.16561C16.0748 9.72393 16.4572 10.4359 16.6131 11.2115C16.769 11.9872 16.6913 12.7916 16.39 13.5231C16.0887 14.2547 15.5773 14.8804 14.9203 15.3212C14.2634 15.7621 13.4905 15.9982 12.6993 15.9998C12.174 16.0009 11.6536 15.8985 11.1679 15.6984C10.6822 15.4984 10.2406 15.2046 9.8684 14.8339C9.49621 14.4632 9.2007 14.0228 8.99873 13.5378C8.79677 13.0529 8.69232 12.5329 8.69135 12.0076Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2458_2712">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0.691406)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__link" href="#">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24.6914 12.0165C24.6914 5.37981 19.3188 -0.000257492 12.6914 -0.000257492C6.06398 -0.000257492 0.691406 5.37981 0.691406 12.0165C0.691406 18.0144 5.07963 22.9857 10.8164 23.8872V15.4901H7.76953V12.0165H10.8164V9.36903C10.8164 6.35734 12.6079 4.69378 15.349 4.69378C16.6619 4.69378 18.0352 4.92848 18.0352 4.92848V7.88572H16.522C15.0313 7.88572 14.5664 8.81201 14.5664 9.76232V12.0165H17.8945L17.3625 15.4901H14.5664V23.8872C20.3032 22.9857 24.6914 18.0144 24.6914 12.0165Z"
+                                                fill="white" />
+                                            <path
+                                                d="M17.3625 15.4569L17.8945 11.9833H14.5664V9.72913C14.5664 8.77882 15.0313 7.85253 16.522 7.85253H18.0352V4.89529C18.0352 4.89529 16.6619 4.66059 15.349 4.66059C12.6079 4.66059 10.8164 6.32415 10.8164 9.33584V11.9833H7.76953V15.4569H10.8164V23.854C11.4274 23.95 12.0535 24 12.6914 24C13.3293 24 13.9555 23.95 14.5664 23.854V15.4569H17.3625Z"
+                                                fill="#1E1E1E" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2458_2717)">
+                                                <path
+                                                    d="M23.9953 12.007C23.9953 15.1142 23.9953 18.2261 23.9953 21.3333C23.9953 22.6128 23.2127 23.6298 22.0082 23.9203C21.7926 23.9719 21.563 23.9953 21.338 23.9953C15.1142 24 8.89045 24 2.66198 23.9953C1.12478 23.9953 0 22.8658 0 21.3286C0 15.1096 0 8.89514 0 2.67604C0 1.12478 1.12478 0 2.67135 0C8.89045 0 15.1049 0 21.324 0C22.8752 0 23.9953 1.12478 23.9953 2.67604C24 5.78793 23.9953 8.89514 23.9953 12.007ZM10.6432 9.76216C10.1183 9.76216 9.61219 9.69654 9.12947 9.77153C6.20972 10.2308 4.25542 12.8178 4.58817 15.7422C4.93966 18.8729 8.03749 21.0615 11.1025 20.3538C13.6098 19.7727 15.3204 17.6309 15.3251 15.058C15.3298 13.1834 15.3251 11.3087 15.3251 9.4341C15.3251 9.34974 15.3251 9.27007 15.3251 9.14353C16.5718 10.0059 17.9074 10.4417 19.3884 10.4464C19.3884 9.45753 19.3884 8.50146 19.3884 7.55477C16.9139 7.28764 15.5548 5.92853 15.2876 3.46339C14.341 3.46339 13.3802 3.46339 12.396 3.46339C12.396 3.57586 12.396 3.67428 12.396 3.77739C12.396 7.53603 12.3913 11.29 12.3866 15.0486C12.3866 16.5858 11.1353 17.7059 9.63093 17.5372C8.40773 17.4013 7.43761 16.2953 7.47042 15.0767C7.50322 13.7692 8.49678 12.71 9.76216 12.6491C10.0527 12.635 10.3433 12.6772 10.6432 12.696C10.6432 11.7305 10.6432 10.7557 10.6432 9.76216Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2458_2717">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-list__item">
+                                    <a class="socials-list__link" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2458_2720)">
+                                                <path
+                                                    d="M0.798241 23.4387C1.09748 22.541 1.38737 21.6853 1.67258 20.8344C1.85493 20.2873 2.03261 19.7403 2.22431 19.1979C2.27574 19.0483 2.26639 18.9407 2.17288 18.8145C1.37802 17.683 0.793566 16.4533 0.438218 15.1161C-0.211694 12.6848 -0.160262 10.2628 0.737458 7.90626C2.23366 3.96938 5.03436 1.39311 9.11618 0.364472C14.8532 -1.07562 20.7071 1.83729 22.9794 7.29843C24.7421 11.5299 24.2044 15.579 21.4505 19.254C19.5569 21.7835 16.9806 23.2891 13.8619 23.7847C10.9818 24.2429 8.2699 23.7052 5.76843 22.181C5.49725 22.0126 5.27282 21.9893 4.97358 22.0874C3.60829 22.5503 2.22898 22.9805 0.798241 23.4387ZM15.8444 18.7163C16.2325 18.6415 16.5738 18.6181 16.8871 18.5106C18.5703 17.9308 19.1454 17.1219 19.1968 15.5696C19.2062 15.3125 19.1127 15.1395 18.8789 15.0319C17.9999 14.6158 17.1302 14.1856 16.2465 13.7742C15.7556 13.5451 15.4891 13.6339 15.1664 14.0781C14.9467 14.382 14.7269 14.6812 14.4932 14.9758C14.1238 15.4434 13.8666 15.5088 13.3196 15.2844C11.3137 14.4662 9.83623 13.0541 8.73278 11.226C8.58316 10.9781 8.60654 10.7537 8.78889 10.5386C8.97591 10.3189 9.16294 10.0991 9.36399 9.8934C9.8035 9.45389 9.9578 8.97698 9.60245 8.41123C9.59777 8.40655 9.59777 8.3972 9.5931 8.38785C9.23775 7.55091 8.88708 6.7093 8.5177 5.87704C8.4616 5.74612 8.326 5.5965 8.19976 5.56377C7.56387 5.41415 6.89994 5.3861 6.37159 5.83028C5.23541 6.78411 4.87071 8.0512 5.09514 9.48662C5.25412 10.5059 5.73103 11.399 6.31081 12.2406C7.24126 13.5965 8.2886 14.8402 9.54167 15.9156C10.935 17.1079 12.5528 17.8653 14.2921 18.3797C14.8158 18.5246 15.3535 18.6088 15.8444 18.7163Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2458_2720">
+                                                    <rect width="24" height="23.9486" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="footer__copy">
+                        © 2023 ТОО «EDIL-ORAL». Все права защищены.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
